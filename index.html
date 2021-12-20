@@ -12,17 +12,17 @@
         <!-- containt wrapper -->
         <div class="md:col-span-1 bg-white md:flex md:justify-end">
             <nav class="text-right">
-                <div>
+                <div class="flex justify-between items-center">
                     <h1 class="font-bold uppercase p-4 border-b border-gray-100">
                         <a href="#" class="hover:text-gray-700">Food ninja</a>
                     </h1>
-                    <div class="px-4 cursor-pointer md:hidden">
+                    <div class="px-4 cursor-pointer md:hidden" id="burger">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" /></svg>
                     </div>
 
                 </div>
-                <ul class="text-sm mt-6">
+                <ul class="text-sm mt-6 hidden md:block" id="menu">
                     <li class="text-gray-900 font-bold py-1">
                         <a href="#" class="px-4 flex justify-end border-r-4 border-red-400">
                             <span>Home</span>
@@ -50,8 +50,8 @@
         <!-- end nav -->
         <main class="px-16 py-16 md:col-span-2">
             <div class="flex justi md:justify-end">
-                <a href="#" class="text-red-400 rounded-full py-2 px-3 uppercase text-xs font-bold cursor-pointer tracking-wider border-red-400 md:border-2 hover:bg-red-400 hover:text-white hover:shadow-lg">Log in</a>
-                <a href="#" class="text-red-400 ml-2 rounded-full py-2 px-3 uppercase text-xs font-bold cursor-pointer tracking-wider border-red-400 md:border-2 hover:bg-red-400 hover:text-white" >Sign up</a>
+                <a href="#" class="text-red-400 rounded-full py-2 px-3 uppercase text-xs font-bold cursor-pointer tracking-wider border-red-400 md:border-2 hover:bg-red-400 hover:text-white hover:shadow-lg transition ease-out duration-500">Log in</a>
+                <a href="#" class="text-red-400 ml-2 rounded-full py-2 px-3 uppercase text-xs font-bold cursor-pointer tracking-wider border-red-400 md:border-2 hover:bg-red-400 hover:text-white transition ease-out duration-500" >Sign up</a>
             </div>
 
 
@@ -76,13 +76,13 @@
                     <span class="block text-gray-500 text-sm">Recepie by Mario</span>
                 </div>
                 <div class="bg-gray-200 text-gray-500 text-xs font-bold rounded-full p-2 absolute top-0 ml-2 mt-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-5 inline-block " fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-5 inline-block mb-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
                     <span>25 MINS</span>
                 </div>
                 </div>
 
-                <!-- card 2 -->
+                <!-- card 2 --> 
 
                 <div class="bg-white rounded overflow-hidden relative hover:shadow-lg">
                     <img src="/img/davide-cantelli-jpkfc5_d-DI-unsplash.jpg" alt="shrimp" class="w-full h-32 sm:h-48 object-cover">
@@ -91,7 +91,7 @@
                         <span class="block text-gray-500 text-sm">Recepie by Mario</span>
                     </div>
                     <div class="bg-gray-200 text-gray-500 text-xs font-bold rounded-full p-2 absolute top-0 ml-2 mt-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-5 inline-block " fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-5 inline-block mb-1 " fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
                         <span>25 MINS</span>
                     </div>
@@ -121,8 +121,8 @@
         </div>
         <div class="flex justify-center">
 
-            <div class="bg-yellow-100 rounded-full py-2 px-3 hover:shadow-inner">
-                Load more 
+            <div class="bg-yellow-100 rounded-full py-2 px-3 hover:shadow-inner transform hover:scale-110 transition ease-out duration-500 hover:bg-opacity-50">
+                LOAD MORE
             </div>
 
         </div>
@@ -130,3 +130,7 @@
     </div>
 </body>
 </html>
+
+
+
+<script type="text/javascript" src="index.js"></script>
